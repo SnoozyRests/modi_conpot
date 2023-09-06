@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Introduction</title><meta http-equiv="x-ua-compatible" content="ie=edge">
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta http-equiv="cache-control" content="no-cache">
+<meta http-equiv="pragma" content="no-cache">
+<meta http-equiv="expires" content="-1">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0">
+<link rel="stylesheet" type="text/css" href="/CSS/S7Web.css" media="all">
+<link rel="stylesheet" type="text/css" href="/CSS/S7WebPrint.css" media="print">
+<link rel="shortcut icon" href="/favicon.ico">
+<script src="/Scripts/jquery-1.11.2.min.js" type="text/javascript"></script>
+
+</head>
+<body>
+<table class="main_table">
+<tr class="Header_Area">
+<td align="left"><img src="/Images/Siemens_Firmenmarke_Header.gif" alt="Siemens"></td><td align="right">
+<table>
+<tr>
+<td class="Header_Link_Element"><a class="Header_Link" href="http://www.siemens.com/automation/mall" target="_blank">mall</a></td>
+<td class="Header_Link_Element"><a class="Header_Link" href="http://www.siemens.com/simatic-controller" target="_blank">simatic-controller</a></td>
+<td class="Header_Link_Element"><a class="Header_Link" href="http://www.siemens.com/automation/service&amp;support" target="_blank">service&#x26;support</a></td>
+<td class="Header_Link_Element"><a class="Header_Link" href="/MiniWebCA_Cer.crt">download certificate</a></td>
+</tr>
+</table>
+</td>
+</tr>
+<tr id="Header_Language_Time_Date">
+<td></td><td>
+<table id="Language_Time_Date_Table">
+<tr>
+<td></td><td class="language-selection"><form class="Header_Selection_Form" method="get">
+<div>
+<select name="Language" id="language_preference">
+<option value="en"  selected>English</option>
+<option value="de" >Deutsch</option>
+<option value="fr" >Français</option>
+<option value="it" >Italiano</option>
+<option value="es" >Español</option>
+<option value="zh" >简体中文</option>
+</select>
+</div>
+</form>
+<script type="text/javascript">
+$("select#language_preference").change(function() {
+document.cookie = "siemens_automation_language=" + $(this).val() + "; expires=Tue, 01 Jan 2036 00:00:00 GMT; path=/ ;";
+top.window.location.reload();
+return false;
+});
+</script>
+
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr class="Separation_Line">
+<td colspan="2"></td>
+</tr>
+<tr>
+<td valign="top" colspan="2" class="main_table">
+<div class="position_intro_image">
+<form class="enterformclass" action="/Portal/Portal.mwsl" method="get">
+<div>
+<img class="intro_image" src="/Images/CPU1200/intro_cpu.jpg" alt="siemens intro image">
+</div>
+<div class="position_intro_enter">
+<input type="submit" class="intro_enter" value="ENTER" name="intro_enter_button">
+<input type="image" src="/Images/intro_enter_arrow.gif">
+<input type="hidden" name="PriNav" value="Start">
+<input type="hidden" name="coming_from_intro" value="true">
+</div>
+<div class="position_intro_no_intro"><input type="checkbox" class="no_intro_checkbox" name="no_intro" value="false">Skip Intro</div>
+</form>
+</div>
+</td>
+</tr>
+<tr><td colspan="*"></td></tr>
+</table>
+</body>
+</html>
