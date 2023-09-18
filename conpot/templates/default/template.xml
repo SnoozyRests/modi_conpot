@@ -17,7 +17,7 @@
                 <value type="value">"Technodrome"</value>
             </key>
             <key name="SystemDescription">
-                <value type="value">"Siemens, SIMATIC, S7-200"</value>
+                <value type="value">"Siemens S7-1200"</value>
             </key>
             <key name="Uptime">
                 <value type="function">conpot.emulators.misc.uptime.Uptime</value>

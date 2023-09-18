@@ -4,7 +4,7 @@ services:
     container_name: PiPotOne
     build: ./
     ports:
-      - "80:8080" #SCADA UI, http
+      - "80:8800" #SCADA UI, http
       - "102:10201" #S7Comm
       - "502:5020" #Modbus
       - "161:16100/udp" #SNMP
